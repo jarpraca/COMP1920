@@ -1,0 +1,32 @@
+import static io.println(int) void;
+
+class Calculator {
+
+	public int c2f(int local_1) {
+		local_1 = 9 * local_1;
+		local_1 = local_1/5;
+		local_1 = local_1 + 32;
+		return local_1;
+	}
+
+	public int f2c(int local_1) {
+		local_1 = local_1 - 32;
+		local_1 = local_1 * 5;
+		local_1 = local_1 / 9;
+		return local_1;
+	}
+
+	public static void main(String[] a) {
+		int n1;
+        int n2;
+		Calculator calc;
+		calc = new Calculator();
+
+		n1 = calc.c2f(10);
+        n2 = calc.f2c(10);
+
+        io.println(n1);
+        io.println(n2);
+
+	}
+}

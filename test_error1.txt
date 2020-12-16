@@ -1,0 +1,51 @@
+//cannot import non static method without importing class first
+import Error.t();
+
+import static io.println()int;
+//import already declared with different return type
+import static io.println();
+
+//Extended class not imported
+class Error1 extends Error {
+
+    public static void main(String[] args) {
+        int x;
+        int y;
+        int z;
+        boolean b;
+        // var is already declared
+        boolean b;
+
+        b = true;
+
+        if(b)
+            x = 3;
+        else
+            b = true;
+
+        // var not initialized
+        z = y;
+        // var might not be initialized
+        y = x;
+
+        // expected boolean, got int
+        b = z;
+        
+        //arithmetic operators can only be used with variables of the same type
+        y = z + b;
+    }
+
+    public int add(int a, int b) {
+        return a+b;
+    }
+
+    //method already declared with this parameters
+    public int add(int y, int z) {
+        return 1;
+    }
+
+    //The argument is already declared
+    public int doubleParam(int a, boolean a) {
+        return 0;
+    }
+}

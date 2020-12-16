@@ -1,0 +1,250 @@
+15:14:57.091 [INFO] [org.gradle.BuildLogger] Starting Build
+15:14:57.096 [DEBUG] [org.gradle.BuildLogger] Gradle user home: /home/toshibs/.gradle
+15:14:57.097 [DEBUG] [org.gradle.BuildLogger] Current dir: /mnt/c/Users/Paulo/Desktop/comp2020-5a
+15:14:57.097 [DEBUG] [org.gradle.BuildLogger] Settings file: null
+15:14:57.097 [DEBUG] [org.gradle.BuildLogger] Build file: null
+15:14:57.108 [DEBUG] [org.gradle.initialization.buildsrc.BuildSourceBuilder] Starting to build the build sources.
+15:14:57.109 [DEBUG] [org.gradle.initialization.buildsrc.BuildSourceBuilder] Gradle source dir does not exist. We leave.
+15:14:57.111 [DEBUG] [org.gradle.initialization.DefaultGradlePropertiesLoader] Found env project properties: []
+15:14:57.112 [DEBUG] [org.gradle.initialization.DefaultGradlePropertiesLoader] Found system project properties: []
+15:14:57.178 [DEBUG] [org.gradle.initialization.ScriptEvaluatingSettingsProcessor] Timing: Processing settings took: 0.065 secs
+15:14:57.180 [INFO] [org.gradle.BuildLogger] Settings evaluated using settings file '/master/settings.gradle'.
+15:14:57.324 [DEBUG] [org.gradle.model.internal.registry.DefaultModelRegistry] Transitioning model element 'tasks' from state Registered to Created
+15:14:57.328 [DEBUG] [org.gradle.model.internal.registry.DefaultModelRegistry] Running model element 'tasks' rule action Project.<init>.tasks()
+15:14:57.329 [DEBUG] [org.gradle.model.internal.registry.DefaultModelRegistry] Mutating tasks using Project.<init>.tasks()
+15:14:57.331 [DEBUG] [org.gradle.model.internal.registry.DefaultModelRegistry] Transitioning model element 'tasks' to state Discovered.
+15:14:57.331 [DEBUG] [org.gradle.model.internal.registry.DefaultModelRegistry] Running model element 'tasks' rule action Project.<init>.tasks()
+15:14:57.332 [DEBUG] [org.gradle.model.internal.registry.DefaultModelRegistry] Mutating tasks using Project.<init>.tasks()
+15:14:57.342 [DEBUG] [org.gradle.model.internal.registry.DefaultModelRegistry] Transitioning model element 'tasks' to state Created.
+15:14:57.345 [DEBUG] [org.gradle.model.internal.registry.DefaultModelRegistry] Transitioning model element 'serviceRegistry' from state Registered to Discovered
+15:14:57.345 [DEBUG] [org.gradle.model.internal.registry.DefaultModelRegistry] Running model element 'serviceRegistry' rule action Project.<init>.serviceRegistry()
+15:14:57.346 [DEBUG] [org.gradle.model.internal.registry.DefaultModelRegistry] Mutating serviceRegistry using Project.<init>.serviceRegistry()
+15:14:57.346 [DEBUG] [org.gradle.model.internal.registry.DefaultModelRegistry] Transitioning model element 'serviceRegistry' to state Discovered.
+15:14:57.366 [DEBUG] [org.gradle.model.internal.registry.DefaultModelRegistry] Transitioning model element 'taskFactory' from state Registered to Discovered
+15:14:57.366 [DEBUG] [org.gradle.model.internal.registry.DefaultModelRegistry] Running model element 'taskFactory' rule action AbstractProject.BasicServicesRules#taskFactory
+15:14:57.366 [DEBUG] [org.gradle.model.internal.registry.DefaultModelRegistry] Mutating taskFactory using AbstractProject.BasicServicesRules#taskFactory
+15:14:57.367 [DEBUG] [org.gradle.model.internal.registry.DefaultModelRegistry] Transitioning model element 'taskFactory' to state Discovered.
+15:14:57.367 [DEBUG] [org.gradle.model.internal.registry.DefaultModelRegistry] Transitioning model element 'typeConverter' from state Registered to Discovered
+15:14:57.368 [DEBUG] [org.gradle.model.internal.registry.DefaultModelRegistry] Running model element 'typeConverter' rule action AbstractProject.BasicServicesRules#typeConverter
+15:14:57.368 [DEBUG] [org.gradle.model.internal.registry.DefaultModelRegistry] Mutating typeConverter using AbstractProject.BasicServicesRules#typeConverter
+15:14:57.368 [DEBUG] [org.gradle.model.internal.registry.DefaultModelRegistry] Transitioning model element 'typeConverter' to state Discovered.
+15:14:57.369 [DEBUG] [org.gradle.model.internal.registry.DefaultModelRegistry] Transitioning model element 'nodeInitializerRegistry' from state Registered to Discovered
+15:14:57.369 [DEBUG] [org.gradle.model.internal.registry.DefaultModelRegistry] Running model element 'nodeInitializerRegistry' rule action AbstractProject.BasicServicesRules#nodeInitializerRegistry
+15:14:57.370 [DEBUG] [org.gradle.model.internal.registry.DefaultModelRegistry] Mutating nodeInitializerRegistry using AbstractProject.BasicServicesRules#nodeInitializerRegistry
+15:14:57.370 [DEBUG] [org.gradle.model.internal.registry.DefaultModelRegistry] Transitioning model element 'nodeInitializerRegistry' to state Discovered.
+15:14:57.371 [DEBUG] [org.gradle.model.internal.registry.DefaultModelRegistry] Transitioning model element 'proxyFactory' from state Registered to Discovered
+15:14:57.371 [DEBUG] [org.gradle.model.internal.registry.DefaultModelRegistry] Running model element 'proxyFactory' rule action AbstractProject.BasicServicesRules#proxyFactory
+15:14:57.372 [DEBUG] [org.gradle.model.internal.registry.DefaultModelRegistry] Mutating proxyFactory using AbstractProject.BasicServicesRules#proxyFactory
+15:14:57.373 [DEBUG] [org.gradle.model.internal.registry.DefaultModelRegistry] Transitioning model element 'proxyFactory' to state Discovered.
+15:14:57.374 [DEBUG] [org.gradle.model.internal.registry.DefaultModelRegistry] Transitioning model element 'schemaStore' from state Registered to Discovered
+15:14:57.374 [DEBUG] [org.gradle.model.internal.registry.DefaultModelRegistry] Running model element 'schemaStore' rule action AbstractProject.BasicServicesRules#schemaStore
+15:14:57.375 [DEBUG] [org.gradle.model.internal.registry.DefaultModelRegistry] Mutating schemaStore using AbstractProject.BasicServicesRules#schemaStore
+15:14:57.375 [DEBUG] [org.gradle.model.internal.registry.DefaultModelRegistry] Transitioning model element 'schemaStore' to state Discovered.
+15:14:57.376 [DEBUG] [org.gradle.initialization.ProjectPropertySettingBuildLoader] Looking for project properties from: /mnt/c/Users/Paulo/Desktop/comp2020-5a/gradle.properties
+15:14:57.377 [DEBUG] [org.gradle.initialization.ProjectPropertySettingBuildLoader] project property file does not exists. We continue!
+15:14:57.378 [INFO] [org.gradle.BuildLogger] Projects loaded. Root project using build file '/mnt/c/Users/Paulo/Desktop/comp2020-5a/build.gradle'.
+15:14:57.378 [INFO] [org.gradle.BuildLogger] Included projects: [root project 'comp2020-5a']
+15:14:57.493 [INFO] [org.gradle.configuration.project.BuildScriptProcessor] Evaluating root project 'comp2020-5a' using build file '/mnt/c/Users/Paulo/Desktop/comp2020-5a/build.gradle'.
+15:14:57.511 [DEBUG] [org.gradle.messaging.remote.internal.inet.InetAddressFactory] Adding IP addresses for network interface lo
+15:14:57.511 [DEBUG] [org.gradle.messaging.remote.internal.inet.InetAddressFactory] Is this a loopback interface? true
+15:14:57.512 [DEBUG] [org.gradle.messaging.remote.internal.inet.InetAddressFactory] Is this a multicast interface? false
+15:14:57.512 [DEBUG] [org.gradle.messaging.remote.internal.inet.InetAddressFactory] Adding loopback address /0:0:0:0:0:0:0:1%lo
+15:14:57.512 [DEBUG] [org.gradle.messaging.remote.internal.inet.InetAddressFactory] Adding loopback address /127.0.0.1
+15:14:57.513 [DEBUG] [org.gradle.messaging.remote.internal.inet.InetAddressFactory] Adding IP addresses for network interface eth0
+15:14:57.513 [DEBUG] [org.gradle.messaging.remote.internal.inet.InetAddressFactory] Is this a loopback interface? false
+15:14:57.513 [DEBUG] [org.gradle.messaging.remote.internal.inet.InetAddressFactory] Is this a multicast interface? true
+15:14:57.514 [DEBUG] [org.gradle.messaging.remote.internal.inet.InetAddressFactory] Adding remote address /fe80:0:0:0:a93f:adf4:658:a20a%eth0
+15:14:57.514 [DEBUG] [org.gradle.messaging.remote.internal.inet.InetAddressFactory] Adding remote address /192.168.1.8
+15:14:57.514 [DEBUG] [org.gradle.messaging.remote.internal.inet.InetAddressFactory] Adding remote multicast interface eth0
+15:14:57.526 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Waiting to acquire shared lock on cp_proj class cache for build file '/mnt/c/Users/Paulo/Desktop/comp2020-5a/build.gradle' (/home/toshibs/.gradle/caches/2.10/scripts/build_2qya8jzk042c8pxhaykl8u685/cp_proj).
+15:14:57.531 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Lock acquired.
+15:14:57.551 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Waiting to acquire exclusive lock on Plugin Resolution Cache (/home/toshibs/.gradle/caches/2.10/plugin-resolution).
+15:14:57.552 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Lock acquired.
+15:14:57.556 [DEBUG] [org.gradle.cache.internal.locklistener.DefaultFileLockContentionHandler] Starting file lock listener thread.
+15:14:57.567 [DEBUG] [org.gradle.cache.internal.btree.BTreePersistentIndexedCache] Opening cache plugin-use-metadata.bin (/home/toshibs/.gradle/caches/2.10/plugin-resolution/plugin-use-metadata.bin)
+15:14:57.634 [DEBUG] [org.gradle.api.internal.artifacts.mvnsettings.DefaultLocalMavenRepositoryLocator] No local repository in Settings file defined. Using default path: /home/toshibs/.m2/repository
+15:14:57.819 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Waiting to acquire exclusive lock on artifact cache (/home/toshibs/.gradle/caches/modules-2).
+15:14:57.820 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Lock acquired.
+15:14:57.833 [DEBUG] [org.gradle.api.internal.artifacts.ivyservice.IvyLoggingAdaper] setting 'ivy.default.settings.dir' to 'jar:file:/usr/share/java/ivy.jar!/org/apache/ivy/core/settings'
+15:14:57.835 [DEBUG] [org.gradle.api.internal.artifacts.ivyservice.IvyLoggingAdaper] setting 'ivy.basedir' to '/mnt/c/Users/Paulo/Desktop/comp2020-5a/.'
+15:14:57.835 [DEBUG] [org.gradle.api.internal.artifacts.ivyservice.IvyLoggingAdaper] setting 'ivy.default.conf.dir' to 'jar:file:/usr/share/java/ivy.jar!/org/apache/ivy/core/settings'
+15:14:57.861 [DEBUG] [org.gradle.api.internal.artifacts.ivyservice.IvyLoggingAdaper] setting 'java.runtime.name' to 'OpenJDK Runtime Environment'
+15:14:57.862 [DEBUG] [org.gradle.api.internal.artifacts.ivyservice.IvyLoggingAdaper] setting 'java.vm.version' to '25.242-b08'
+15:14:57.862 [DEBUG] [org.gradle.api.internal.artifacts.ivyservice.IvyLoggingAdaper] setting 'sun.boot.library.path' to '/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/amd64'
+15:14:57.862 [DEBUG] [org.gradle.api.internal.artifacts.ivyservice.IvyLoggingAdaper] setting 'java.vm.vendor' to 'Private Build'
+15:14:57.862 [DEBUG] [org.gradle.api.internal.artifacts.ivyservice.IvyLoggingAdaper] setting 'java.vendor.url' to 'http://java.oracle.com/'
+15:14:57.862 [DEBUG] [org.gradle.api.internal.artifacts.ivyservice.IvyLoggingAdaper] setting 'path.separator' to ':'
+15:14:57.862 [DEBUG] [org.gradle.api.internal.artifacts.ivyservice.IvyLoggingAdaper] setting 'java.vm.name' to 'OpenJDK 64-Bit Server VM'
+15:14:57.863 [DEBUG] [org.gradle.api.internal.artifacts.ivyservice.IvyLoggingAdaper] setting 'file.encoding.pkg' to 'sun.io'
+15:14:57.863 [DEBUG] [org.gradle.api.internal.artifacts.ivyservice.IvyLoggingAdaper] setting 'sun.os.patch.level' to 'unknown'
+15:14:57.863 [DEBUG] [org.gradle.api.internal.artifacts.ivyservice.IvyLoggingAdaper] setting 'user.country' to 'US'
+15:14:57.863 [DEBUG] [org.gradle.api.internal.artifacts.ivyservice.IvyLoggingAdaper] setting 'sun.java.launcher' to 'SUN_STANDARD'
+15:14:57.863 [DEBUG] [org.gradle.api.internal.artifacts.ivyservice.IvyLoggingAdaper] setting 'java.vm.specification.name' to 'Java Virtual Machine Specification'
+15:14:57.864 [DEBUG] [org.gradle.api.internal.artifacts.ivyservice.IvyLoggingAdaper] setting 'user.dir' to '/mnt/c/Users/Paulo/Desktop/comp2020-5a'
+15:14:57.864 [DEBUG] [org.gradle.api.internal.artifacts.ivyservice.IvyLoggingAdaper] setting 'java.runtime.version' to '1.8.0_242-8u242-b08-0ubuntu3~16.04-b08'
+15:14:57.864 [DEBUG] [org.gradle.api.internal.artifacts.ivyservice.IvyLoggingAdaper] setting 'java.awt.graphicsenv' to 'sun.awt.X11GraphicsEnvironment'
+15:14:57.864 [DEBUG] [org.gradle.api.internal.artifacts.ivyservice.IvyLoggingAdaper] setting 'os.arch' to 'amd64'
+15:14:57.864 [DEBUG] [org.gradle.api.internal.artifacts.ivyservice.IvyLoggingAdaper] setting 'java.endorsed.dirs' to '/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/endorsed'
+15:14:57.864 [DEBUG] [org.gradle.api.internal.artifacts.ivyservice.IvyLoggingAdaper] setting 'java.io.tmpdir' to '/tmp'
+15:14:57.865 [DEBUG] [org.gradle.api.internal.artifacts.ivyservice.IvyLoggingAdaper] setting 'line.separator' to '
+'
+15:14:57.865 [DEBUG] [org.gradle.api.internal.artifacts.ivyservice.IvyLoggingAdaper] setting 'org.gradle.appname' to 'gradle'
+15:14:57.865 [DEBUG] [org.gradle.api.internal.artifacts.ivyservice.IvyLoggingAdaper] setting 'java.vm.specification.vendor' to 'Oracle Corporation'
+15:14:57.865 [DEBUG] [org.gradle.api.internal.artifacts.ivyservice.IvyLoggingAdaper] setting 'os.name' to 'Linux'
+15:14:57.865 [DEBUG] [org.gradle.api.internal.artifacts.ivyservice.IvyLoggingAdaper] setting 'sun.jnu.encoding' to 'UTF-8'
+15:14:57.865 [DEBUG] [org.gradle.api.internal.artifacts.ivyservice.IvyLoggingAdaper] setting 'java.library.path' to '/usr/java/packages/lib/amd64:/usr/lib/x86_64-linux-gnu/jni:/lib/x86_64-linux-gnu:/usr/lib/x86_64-linux-gnu:/usr/lib/jni:/lib:/usr/lib'
+15:14:57.865 [DEBUG] [org.gradle.api.internal.artifacts.ivyservice.IvyLoggingAdaper] setting 'http.keepAlive' to 'true'
+15:14:57.866 [DEBUG] [org.gradle.api.internal.artifacts.ivyservice.IvyLoggingAdaper] setting 'java.class.version' to '52.0'
+15:14:57.866 [DEBUG] [org.gradle.api.internal.artifacts.ivyservice.IvyLoggingAdaper] setting 'java.specification.name' to 'Java Platform API Specification'
+15:14:57.866 [DEBUG] [org.gradle.api.internal.artifacts.ivyservice.IvyLoggingAdaper] setting 'sun.management.compiler' to 'HotSpot 64-Bit Tiered Compilers'
+15:14:57.866 [DEBUG] [org.gradle.api.internal.artifacts.ivyservice.IvyLoggingAdaper] setting 'os.version' to '4.4.0-18362-Microsoft'
+15:14:57.866 [DEBUG] [org.gradle.api.internal.artifacts.ivyservice.IvyLoggingAdaper] setting 'user.home' to '/home/toshibs'
+15:14:57.866 [DEBUG] [org.gradle.api.internal.artifacts.ivyservice.IvyLoggingAdaper] setting 'user.timezone' to 'Europe/Lisbon'
+15:14:57.867 [DEBUG] [org.gradle.api.internal.artifacts.ivyservice.IvyLoggingAdaper] setting 'java.awt.printerjob' to 'sun.print.PSPrinterJob'
+15:14:57.867 [DEBUG] [org.gradle.api.internal.artifacts.ivyservice.IvyLoggingAdaper] setting 'file.encoding' to 'UTF-8'
+15:14:57.867 [DEBUG] [org.gradle.api.internal.artifacts.ivyservice.IvyLoggingAdaper] setting 'java.specification.version' to '1.8'
+15:14:57.867 [DEBUG] [org.gradle.api.internal.artifacts.ivyservice.IvyLoggingAdaper] setting 'user.name' to 'toshibs'
+15:14:57.867 [DEBUG] [org.gradle.api.internal.artifacts.ivyservice.IvyLoggingAdaper] setting 'java.class.path' to '/usr/share/gradle/lib/gradle-launcher-2.10.jar'
+15:14:57.867 [DEBUG] [org.gradle.api.internal.artifacts.ivyservice.IvyLoggingAdaper] setting 'java.vm.specification.version' to '1.8'
+15:14:57.867 [DEBUG] [org.gradle.api.internal.artifacts.ivyservice.IvyLoggingAdaper] setting 'sun.arch.data.model' to '64'
+15:14:57.868 [DEBUG] [org.gradle.api.internal.artifacts.ivyservice.IvyLoggingAdaper] setting 'sun.java.command' to 'org.gradle.launcher.GradleMain build --debug'
+15:14:57.868 [DEBUG] [org.gradle.api.internal.artifacts.ivyservice.IvyLoggingAdaper] setting 'java.home' to '/usr/lib/jvm/java-8-openjdk-amd64/jre'
+15:14:57.868 [DEBUG] [org.gradle.api.internal.artifacts.ivyservice.IvyLoggingAdaper] setting 'user.language' to 'en'
+15:14:57.868 [DEBUG] [org.gradle.api.internal.artifacts.ivyservice.IvyLoggingAdaper] setting 'java.specification.vendor' to 'Oracle Corporation'
+15:14:57.868 [DEBUG] [org.gradle.api.internal.artifacts.ivyservice.IvyLoggingAdaper] setting 'awt.toolkit' to 'sun.awt.X11.XToolkit'
+15:14:57.868 [DEBUG] [org.gradle.api.internal.artifacts.ivyservice.IvyLoggingAdaper] setting 'java.vm.info' to 'mixed mode'
+15:14:57.868 [DEBUG] [org.gradle.api.internal.artifacts.ivyservice.IvyLoggingAdaper] setting 'java.version' to '1.8.0_242'
+15:14:57.869 [DEBUG] [org.gradle.api.internal.artifacts.ivyservice.IvyLoggingAdaper] setting 'java.ext.dirs' to '/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/ext:/usr/java/packages/lib/ext'
+15:14:57.869 [DEBUG] [org.gradle.api.internal.artifacts.ivyservice.IvyLoggingAdaper] setting 'sun.boot.class.path' to '/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/resources.jar:/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/rt.jar:/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/sunrsasign.jar:/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/jsse.jar:/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/jce.jar:/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/charsets.jar:/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/jfr.jar:/usr/lib/jvm/java-8-openjdk-amd64/jre/classes'
+15:14:57.869 [DEBUG] [org.gradle.api.internal.artifacts.ivyservice.IvyLoggingAdaper] setting 'java.vendor' to 'Private Build'
+15:14:57.869 [DEBUG] [org.gradle.api.internal.artifacts.ivyservice.IvyLoggingAdaper] setting 'file.separator' to '/'
+15:14:57.869 [DEBUG] [org.gradle.api.internal.artifacts.ivyservice.IvyLoggingAdaper] setting 'java.vendor.url.bug' to 'http://bugreport.sun.com/bugreport/'
+15:14:57.869 [DEBUG] [org.gradle.api.internal.artifacts.ivyservice.IvyLoggingAdaper] setting 'sun.io.unicode.encoding' to 'UnicodeLittle'
+15:14:57.870 [DEBUG] [org.gradle.api.internal.artifacts.ivyservice.IvyLoggingAdaper] setting 'sun.cpu.endian' to 'little'
+15:14:57.870 [DEBUG] [org.gradle.api.internal.artifacts.ivyservice.IvyLoggingAdaper] setting 'sun.cpu.isalist' to ''
+15:14:57.884 [DEBUG] [org.gradle.api.internal.artifacts.ivyservice.resolveengine.DefaultArtifactDependencyResolver] Resolving configuration ':classpath'
+15:14:57.906 [DEBUG] [org.gradle.api.internal.artifacts.ivyservice.ivyresolve.memcache.InMemoryCachedRepositoryFactory] Creating new in-memory cache for repo 'maven' [c12d174581602785ab9b0cd255906120].
+15:14:57.927 [DEBUG] [org.gradle.api.internal.artifacts.ivyservice.resolveengine.graph.DependencyGraphBuilder] Visiting configuration :comp2020-5a:unspecified(classpath).
+15:14:57.930 [DEBUG] [org.gradle.api.internal.artifacts.ivyservice.resolveengine.graph.DependencyGraphBuilder] Visiting dependency :comp2020-5a:unspecified(classpath) -> ca.coglinc:javacc-gradle-plugin:2.4.0(classpath)
+15:14:57.932 [DEBUG] [org.gradle.api.internal.artifacts.ivyservice.resolveengine.graph.DependencyGraphBuilder] Selecting new module version ca.coglinc:javacc-gradle-plugin:2.4.0
+15:14:57.933 [DEBUG] [org.gradle.api.internal.artifacts.ivyservice.ivyresolve.RepositoryChainComponentMetaDataResolver] Attempting to resolve component for ca.coglinc:javacc-gradle-plugin:2.4.0 using repositories [maven]
+15:14:57.937 [DEBUG] [org.gradle.cache.internal.btree.BTreePersistentIndexedCache] Opening cache module-metadata.bin (/home/toshibs/.gradle/caches/modules-2/metadata-2.16/module-metadata.bin)
+15:14:58.021 [DEBUG] [org.gradle.api.internal.artifacts.ivyservice.ivyresolve.parser.IvyXmlModuleDescriptorParser] post 1.3 ivy file: using exact as default matcher
+15:14:58.032 [DEBUG] [org.gradle.api.internal.artifacts.ivyservice.ivyresolve.CachingModuleComponentRepository] Using cached module metadata for module 'ca.coglinc:javacc-gradle-plugin:2.4.0' in 'maven'
+15:14:58.034 [DEBUG] [org.gradle.api.internal.artifacts.ivyservice.ivyresolve.RepositoryChainComponentMetaDataResolver] Using ca.coglinc:javacc-gradle-plugin:2.4.0 from Maven repository 'maven'
+15:14:58.035 [DEBUG] [org.gradle.api.internal.artifacts.ivyservice.resolveengine.graph.DependencyGraphBuilder] Visiting configuration ca.coglinc:javacc-gradle-plugin:2.4.0(default).
+15:14:58.036 [DEBUG] [org.gradle.api.internal.artifacts.ivyservice.resolveengine.graph.DependencyGraphBuilder] Visiting dependency ca.coglinc:javacc-gradle-plugin:2.4.0(default) -> commons-io:commons-io:2.4(runtime)
+15:14:58.037 [DEBUG] [org.gradle.api.internal.artifacts.ivyservice.resolveengine.graph.DependencyGraphBuilder] Selecting new module version commons-io:commons-io:2.4
+15:14:58.037 [DEBUG] [org.gradle.api.internal.artifacts.ivyservice.ivyresolve.RepositoryChainComponentMetaDataResolver] Attempting to resolve component for commons-io:commons-io:2.4 using repositories [maven]
+15:14:58.039 [DEBUG] [org.gradle.api.internal.artifacts.ivyservice.ivyresolve.parser.IvyXmlModuleDescriptorParser] post 1.3 ivy file: using exact as default matcher
+15:14:58.041 [DEBUG] [org.gradle.api.internal.artifacts.ivyservice.ivyresolve.CachingModuleComponentRepository] Using cached module metadata for module 'commons-io:commons-io:2.4' in 'maven'
+15:14:58.041 [DEBUG] [org.gradle.api.internal.artifacts.ivyservice.ivyresolve.RepositoryChainComponentMetaDataResolver] Using commons-io:commons-io:2.4 from Maven repository 'maven'
+15:14:58.042 [DEBUG] [org.gradle.api.internal.artifacts.ivyservice.resolveengine.graph.DependencyGraphBuilder] Visiting dependency ca.coglinc:javacc-gradle-plugin:2.4.0(default) -> org.apache.commons:commons-lang3:3.4(runtime)
+15:14:58.042 [DEBUG] [org.gradle.api.internal.artifacts.ivyservice.resolveengine.graph.DependencyGraphBuilder] Selecting new module version org.apache.commons:commons-lang3:3.4
+15:14:58.042 [DEBUG] [org.gradle.api.internal.artifacts.ivyservice.ivyresolve.RepositoryChainComponentMetaDataResolver] Attempting to resolve component for org.apache.commons:commons-lang3:3.4 using repositories [maven]
+15:14:58.044 [DEBUG] [org.gradle.api.internal.artifacts.ivyservice.ivyresolve.parser.IvyXmlModuleDescriptorParser] post 1.3 ivy file: using exact as default matcher
+15:14:58.046 [DEBUG] [org.gradle.api.internal.artifacts.ivyservice.ivyresolve.CachingModuleComponentRepository] Using cached module metadata for module 'org.apache.commons:commons-lang3:3.4' in 'maven'
+15:14:58.047 [DEBUG] [org.gradle.api.internal.artifacts.ivyservice.ivyresolve.RepositoryChainComponentMetaDataResolver] Using org.apache.commons:commons-lang3:3.4 from Maven repository 'maven'
+15:14:58.047 [DEBUG] [org.gradle.api.internal.artifacts.ivyservice.resolveengine.graph.DependencyGraphBuilder] Visiting dependency ca.coglinc:javacc-gradle-plugin:2.4.0(default) -> org.apache.commons:commons-collections4:4.1(runtime)
+15:14:58.047 [DEBUG] [org.gradle.api.internal.artifacts.ivyservice.resolveengine.graph.DependencyGraphBuilder] Selecting new module version org.apache.commons:commons-collections4:4.1
+15:14:58.048 [DEBUG] [org.gradle.api.internal.artifacts.ivyservice.ivyresolve.RepositoryChainComponentMetaDataResolver] Attempting to resolve component for org.apache.commons:commons-collections4:4.1 using repositories [maven]
+15:14:58.049 [DEBUG] [org.gradle.api.internal.artifacts.ivyservice.ivyresolve.parser.IvyXmlModuleDescriptorParser] post 1.3 ivy file: using exact as default matcher
+15:14:58.051 [DEBUG] [org.gradle.api.internal.artifacts.ivyservice.ivyresolve.CachingModuleComponentRepository] Using cached module metadata for module 'org.apache.commons:commons-collections4:4.1' in 'maven'
+15:14:58.051 [DEBUG] [org.gradle.api.internal.artifacts.ivyservice.ivyresolve.RepositoryChainComponentMetaDataResolver] Using org.apache.commons:commons-collections4:4.1 from Maven repository 'maven'
+15:14:58.051 [DEBUG] [org.gradle.api.internal.artifacts.ivyservice.resolveengine.graph.DependencyGraphBuilder] Visiting dependency ca.coglinc:javacc-gradle-plugin:2.4.0(default) -> com.google.guava:guava-jdk5:17.0(runtime)
+15:14:58.052 [DEBUG] [org.gradle.api.internal.artifacts.ivyservice.resolveengine.graph.DependencyGraphBuilder] Selecting new module version com.google.guava:guava-jdk5:17.0
+15:14:58.052 [DEBUG] [org.gradle.api.internal.artifacts.ivyservice.ivyresolve.RepositoryChainComponentMetaDataResolver] Attempting to resolve component for com.google.guava:guava-jdk5:17.0 using repositories [maven]
+15:14:58.054 [DEBUG] [org.gradle.api.internal.artifacts.ivyservice.ivyresolve.parser.IvyXmlModuleDescriptorParser] post 1.3 ivy file: using exact as default matcher
+15:14:58.055 [DEBUG] [org.gradle.api.internal.artifacts.ivyservice.ivyresolve.CachingModuleComponentRepository] Using cached module metadata for module 'com.google.guava:guava-jdk5:17.0' in 'maven'
+15:14:58.055 [DEBUG] [org.gradle.api.internal.artifacts.ivyservice.ivyresolve.RepositoryChainComponentMetaDataResolver] Using com.google.guava:guava-jdk5:17.0 from Maven repository 'maven'
+15:14:58.055 [DEBUG] [org.gradle.api.internal.artifacts.ivyservice.resolveengine.graph.DependencyGraphBuilder] Visiting configuration commons-io:commons-io:2.4(compile).
+15:14:58.056 [DEBUG] [org.gradle.api.internal.artifacts.ivyservice.resolveengine.graph.DependencyGraphBuilder] Visiting configuration commons-io:commons-io:2.4(runtime).
+15:14:58.056 [DEBUG] [org.gradle.api.internal.artifacts.ivyservice.resolveengine.graph.DependencyGraphBuilder] Visiting configuration commons-io:commons-io:2.4(master).
+15:14:58.056 [DEBUG] [org.gradle.api.internal.artifacts.ivyservice.resolveengine.graph.DependencyGraphBuilder] Visiting configuration org.apache.commons:commons-lang3:3.4(compile).
+15:14:58.056 [DEBUG] [org.gradle.api.internal.artifacts.ivyservice.resolveengine.graph.DependencyGraphBuilder] Visiting configuration org.apache.commons:commons-lang3:3.4(runtime).
+15:14:58.056 [DEBUG] [org.gradle.api.internal.artifacts.ivyservice.resolveengine.graph.DependencyGraphBuilder] Visiting configuration org.apache.commons:commons-lang3:3.4(master).
+15:14:58.057 [DEBUG] [org.gradle.api.internal.artifacts.ivyservice.resolveengine.graph.DependencyGraphBuilder] Visiting configuration org.apache.commons:commons-collections4:4.1(compile).
+15:14:58.057 [DEBUG] [org.gradle.api.internal.artifacts.ivyservice.resolveengine.graph.DependencyGraphBuilder] Visiting configuration org.apache.commons:commons-collections4:4.1(runtime).
+15:14:58.057 [DEBUG] [org.gradle.api.internal.artifacts.ivyservice.resolveengine.graph.DependencyGraphBuilder] Visiting configuration org.apache.commons:commons-collections4:4.1(master).
+15:14:58.057 [DEBUG] [org.gradle.api.internal.artifacts.ivyservice.resolveengine.graph.DependencyGraphBuilder] Visiting configuration com.google.guava:guava-jdk5:17.0(compile).
+15:14:58.057 [DEBUG] [org.gradle.api.internal.artifacts.ivyservice.resolveengine.graph.DependencyGraphBuilder] Visiting configuration com.google.guava:guava-jdk5:17.0(runtime).
+15:14:58.057 [DEBUG] [org.gradle.api.internal.artifacts.ivyservice.resolveengine.graph.DependencyGraphBuilder] Visiting configuration com.google.guava:guava-jdk5:17.0(master).
+15:14:58.066 [DEBUG] [org.gradle.api.internal.artifacts.ivyservice.resolveengine.oldresult.TransientConfigurationResultsBuilder] Flushing resolved configuration data in Binary store in /tmp/gradle2257590193313723034.bin. Wrote root :comp2020-5a:unspecified:classpath.
+15:14:58.078 [DEBUG] [org.gradle.cache.internal.btree.BTreePersistentIndexedCache] Opening cache artifact-at-repository.bin (/home/toshibs/.gradle/caches/modules-2/metadata-2.16/artifact-at-repository.bin)
+15:14:58.080 [DEBUG] [org.gradle.api.internal.artifacts.ivyservice.ivyresolve.CachingModuleComponentRepository] Found artifact 'javacc-gradle-plugin.jar (ca.coglinc:javacc-gradle-plugin:2.4.0)' in resolver cache: /home/toshibs/.gradle/caches/modules-2/files-2.1/ca.coglinc/javacc-gradle-plugin/2.4.0/dccd5eb57466211dcacb594dc2461a6ed3bec7b/javacc-gradle-plugin-2.4.0.jar
+15:14:58.080 [DEBUG] [org.gradle.api.internal.artifacts.ivyservice.ivyresolve.CachingModuleComponentRepository] Found artifact 'commons-io.jar (commons-io:commons-io:2.4)' in resolver cache: /home/toshibs/.gradle/caches/modules-2/files-2.1/commons-io/commons-io/2.4/b1b6ea3b7e4aa4f492509a4952029cd8e48019ad/commons-io-2.4.jar
+15:14:58.081 [DEBUG] [org.gradle.api.internal.artifacts.ivyservice.ivyresolve.CachingModuleComponentRepository] Found artifact 'commons-lang3.jar (org.apache.commons:commons-lang3:3.4)' in resolver cache: /home/toshibs/.gradle/caches/modules-2/files-2.1/org.apache.commons/commons-lang3/3.4/5fe28b9518e58819180a43a850fbc0dd24b7c050/commons-lang3-3.4.jar
+15:14:58.081 [DEBUG] [org.gradle.api.internal.artifacts.ivyservice.ivyresolve.CachingModuleComponentRepository] Found artifact 'commons-collections4.jar (org.apache.commons:commons-collections4:4.1)' in resolver cache: /home/toshibs/.gradle/caches/modules-2/files-2.1/org.apache.commons/commons-collections4/4.1/a4cf4688fe1c7e3a63aa636cc96d013af537768e/commons-collections4-4.1.jar
+15:14:58.082 [DEBUG] [org.gradle.api.internal.artifacts.ivyservice.ivyresolve.CachingModuleComponentRepository] Found artifact 'guava-jdk5.jar (com.google.guava:guava-jdk5:17.0)' in resolver cache: /home/toshibs/.gradle/caches/modules-2/files-2.1/com.google.guava/guava-jdk5/17.0/463f8378feba44df7ba7cd9272d01837dad62b36/guava-jdk5-17.0.jar
+15:14:58.121 [DEBUG] [org.gradle.api.Task] Changing input directory to [/mnt/c/Users/Paulo/Desktop/comp2020-5a/src/main/javacc]
+15:14:58.123 [DEBUG] [org.gradle.api.Task] Changing output directory to [/mnt/c/Users/Paulo/Desktop/comp2020-5a/build/generated/javacc]
+15:14:58.140 [DEBUG] [org.gradle.api.Task] Changing input directory to [/mnt/c/Users/Paulo/Desktop/comp2020-5a/src/main/jjtree]
+15:14:58.141 [DEBUG] [org.gradle.api.Task] Changing output directory to [/mnt/c/Users/Paulo/Desktop/comp2020-5a/build/generated/jjtree]
+15:14:58.146 [DEBUG] [org.gradle.api.Task] Changing input directory to [/mnt/c/Users/Paulo/Desktop/comp2020-5a/src/main/javacc]
+15:14:58.146 [DEBUG] [org.gradle.api.Task] Changing output directory to [/mnt/c/Users/Paulo/Desktop/comp2020-5a/build/generated/jjdoc]
+15:14:58.149 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Waiting to acquire shared lock on proj class cache for build file '/mnt/c/Users/Paulo/Desktop/comp2020-5a/build.gradle' (/home/toshibs/.gradle/caches/2.10/scripts/build_2qya8jzk042c8pxhaykl8u685/proj).
+15:14:58.149 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Lock acquired.
+15:14:58.229 [DEBUG] [org.gradle.model.internal.registry.DefaultModelRegistry] Transitioning model element 'tasks.assemble' from state Registered to Initialized
+15:14:58.229 [DEBUG] [org.gradle.model.internal.registry.DefaultModelRegistry] Running model element 'tasks.assemble' rule action tasks.addPlaceholderAction(assemble)
+15:14:58.229 [DEBUG] [org.gradle.model.internal.registry.DefaultModelRegistry] Mutating tasks.assemble using tasks.addPlaceholderAction(assemble)
+15:14:58.229 [DEBUG] [org.gradle.model.internal.registry.DefaultModelRegistry] Transitioning model element 'tasks.assemble' to state Discovered.
+15:14:58.230 [DEBUG] [org.gradle.model.internal.registry.DefaultModelRegistry] Running model element 'tasks.assemble' rule action tasks.addPlaceholderAction(assemble)
+15:14:58.230 [DEBUG] [org.gradle.model.internal.registry.DefaultModelRegistry] Mutating tasks.assemble using tasks.addPlaceholderAction(assemble)
+15:14:58.232 [DEBUG] [org.gradle.model.internal.registry.DefaultModelRegistry] Transitioning model element 'tasks.assemble' to state Created.
+15:14:58.232 [DEBUG] [org.gradle.model.internal.registry.DefaultModelRegistry] Transitioning model element 'tasks.assemble' to state DefaultsApplied.
+15:14:58.233 [DEBUG] [org.gradle.model.internal.registry.DefaultModelRegistry] Running model element 'tasks.assemble' rule action copyToTaskContainer
+15:14:58.233 [DEBUG] [org.gradle.model.internal.registry.DefaultModelRegistry] Mutating tasks.assemble using copyToTaskContainer
+15:14:58.234 [DEBUG] [org.gradle.model.internal.registry.DefaultModelRegistry] Transitioning model element 'tasks.assemble' to state Initialized.
+15:14:58.425 [DEBUG] [org.gradle.model.internal.registry.DefaultModelRegistry] Transitioning model element 'languageSourceSetFactory' from state Registered to Discovered
+15:14:58.425 [DEBUG] [org.gradle.model.internal.registry.DefaultModelRegistry] Running model element 'languageSourceSetFactory' rule action LanguageBasePlugin.Rules#languageSourceSetFactory
+15:14:58.425 [DEBUG] [org.gradle.model.internal.registry.DefaultModelRegistry] Mutating languageSourceSetFactory using LanguageBasePlugin.Rules#languageSourceSetFactory
+15:14:58.425 [DEBUG] [org.gradle.model.internal.registry.DefaultModelRegistry] Transitioning model element 'languageSourceSetFactory' to state Discovered.
+15:14:58.426 [DEBUG] [org.gradle.model.internal.registry.DefaultModelRegistry] Transitioning model element 'languages' from state Registered to Discovered
+15:14:58.426 [DEBUG] [org.gradle.model.internal.registry.DefaultModelRegistry] Running model element 'languages' rule action LanguageBasePlugin.Rules#languages
+15:14:58.426 [DEBUG] [org.gradle.model.internal.registry.DefaultModelRegistry] Mutating languages using LanguageBasePlugin.Rules#languages
+15:14:58.426 [DEBUG] [org.gradle.model.internal.registry.DefaultModelRegistry] Transitioning model element 'languages' to state Discovered.
+15:14:58.441 [DEBUG] [org.gradle.model.internal.registry.DefaultModelRegistry] Transitioning model element 'languageTransforms' from state Registered to Discovered
+15:14:58.441 [DEBUG] [org.gradle.model.internal.registry.DefaultModelRegistry] Running model element 'languageTransforms' rule action ComponentModelBasePlugin.Rules#languageTransforms
+15:14:58.441 [DEBUG] [org.gradle.model.internal.registry.DefaultModelRegistry] Mutating languageTransforms using ComponentModelBasePlugin.Rules#languageTransforms
+15:14:58.441 [DEBUG] [org.gradle.model.internal.registry.DefaultModelRegistry] Transitioning model element 'languageTransforms' to state Discovered.
+15:14:58.442 [DEBUG] [org.gradle.model.internal.registry.DefaultModelRegistry] Transitioning model element 'binarySpecFactory' from state Registered to Discovered
+15:14:58.442 [DEBUG] [org.gradle.model.internal.registry.DefaultModelRegistry] Running model element 'binarySpecFactory' rule action ComponentModelBasePlugin.Rules#binarySpecFactory
+15:14:58.442 [DEBUG] [org.gradle.model.internal.registry.DefaultModelRegistry] Mutating binarySpecFactory using ComponentModelBasePlugin.Rules#binarySpecFactory
+15:14:58.443 [DEBUG] [org.gradle.model.internal.registry.DefaultModelRegistry] Transitioning model element 'binarySpecFactory' to state Discovered.
+15:14:58.443 [DEBUG] [org.gradle.model.internal.registry.DefaultModelRegistry] Transitioning model element 'componentSpecFactory' from state Registered to Discovered
+15:14:58.443 [DEBUG] [org.gradle.model.internal.registry.DefaultModelRegistry] Running model element 'componentSpecFactory' rule action ComponentModelBasePlugin.Rules#componentSpecFactory
+15:14:58.443 [DEBUG] [org.gradle.model.internal.registry.DefaultModelRegistry] Mutating componentSpecFactory using ComponentModelBasePlugin.Rules#componentSpecFactory
+15:14:58.443 [DEBUG] [org.gradle.model.internal.registry.DefaultModelRegistry] Transitioning model element 'componentSpecFactory' to state Discovered.
+15:14:58.444 [DEBUG] [org.gradle.model.internal.registry.DefaultModelRegistry] Transitioning model element 'platformResolver' from state Registered to Discovered
+15:14:58.444 [DEBUG] [org.gradle.model.internal.registry.DefaultModelRegistry] Running model element 'platformResolver' rule action ComponentModelBasePlugin.Rules#platformResolver
+15:14:58.444 [DEBUG] [org.gradle.model.internal.registry.DefaultModelRegistry] Mutating platformResolver using ComponentModelBasePlugin.Rules#platformResolver
+15:14:58.444 [DEBUG] [org.gradle.model.internal.registry.DefaultModelRegistry] Transitioning model element 'platformResolver' to state Discovered.
+15:14:58.585 [DEBUG] [org.gradle.model.internal.registry.DefaultModelRegistry] Transitioning model element 'tasks.check' from state Registered to Initialized
+15:14:58.585 [DEBUG] [org.gradle.model.internal.registry.DefaultModelRegistry] Running model element 'tasks.check' rule action tasks.addPlaceholderAction(check)
+15:14:58.585 [DEBUG] [org.gradle.model.internal.registry.DefaultModelRegistry] Mutating tasks.check using tasks.addPlaceholderAction(check)
+15:14:58.585 [DEBUG] [org.gradle.model.internal.registry.DefaultModelRegistry] Transitioning model element 'tasks.check' to state Discovered.
+15:14:58.585 [DEBUG] [org.gradle.model.internal.registry.DefaultModelRegistry] Running model element 'tasks.check' rule action tasks.addPlaceholderAction(check)
+15:14:58.586 [DEBUG] [org.gradle.model.internal.registry.DefaultModelRegistry] Mutating tasks.check using tasks.addPlaceholderAction(check)
+15:14:58.586 [DEBUG] [org.gradle.model.internal.registry.DefaultModelRegistry] Transitioning model element 'tasks.check' to state Created.
+15:14:58.586 [DEBUG] [org.gradle.model.internal.registry.DefaultModelRegistry] Transitioning model element 'tasks.check' to state DefaultsApplied.
+15:14:58.586 [DEBUG] [org.gradle.model.internal.registry.DefaultModelRegistry] Running model element 'tasks.check' rule action copyToTaskContainer
+15:14:58.586 [DEBUG] [org.gradle.model.internal.registry.DefaultModelRegistry] Mutating tasks.check using copyToTaskContainer
+15:14:58.587 [DEBUG] [org.gradle.model.internal.registry.DefaultModelRegistry] Transitioning model element 'tasks.check' to state Initialized.
+15:14:58.683 [DEBUG] [org.gradle.configuration.project.BuildScriptProcessor] Timing: Running the build script took 1.189 secs
+15:14:58.724 [LIFECYCLE] [org.gradle.BuildResultLogger] 
+15:14:58.724 [LIFECYCLE] [org.gradle.BuildResultLogger] BUILD FAILED
+15:14:58.724 [LIFECYCLE] [org.gradle.BuildResultLogger] 
+15:14:58.724 [LIFECYCLE] [org.gradle.BuildResultLogger] Total time: 2.783 secs
+15:14:58.727 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Releasing lock on cp_proj class cache for build file '/mnt/c/Users/Paulo/Desktop/comp2020-5a/build.gradle' (/home/toshibs/.gradle/caches/2.10/scripts/build_2qya8jzk042c8pxhaykl8u685/cp_proj).
+15:14:58.728 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Releasing lock on proj class cache for build file '/mnt/c/Users/Paulo/Desktop/comp2020-5a/build.gradle' (/home/toshibs/.gradle/caches/2.10/scripts/build_2qya8jzk042c8pxhaykl8u685/proj).
+15:14:58.730 [DEBUG] [org.gradle.api.internal.artifacts.ivyservice.resolveengine.store.CachedStoreFactory] Resolution result cache closed. Cache reads: 0, disk reads: 0 (avg: 0.0 secs, total: 0.0 secs)
+15:14:58.731 [DEBUG] [org.gradle.api.internal.artifacts.ivyservice.resolveengine.store.CachedStoreFactory] Resolution result cache closed. Cache reads: 0, disk reads: 0 (avg: 0.0 secs, total: 0.0 secs)
+15:14:58.732 [DEBUG] [org.gradle.api.internal.artifacts.ivyservice.resolveengine.store.ResolutionResultsStoreFactory] Deleted 2 resolution results binary files in 0.003 secs
+15:14:58.732 [DEBUG] [org.gradle.api.internal.artifacts.ivyservice.ivyresolve.memcache.InMemoryCachedRepositoryFactory] In-memory dependency metadata cache closed. Repos cached: 1, cache instances: 1, modules served from cache: 0, artifacts: 0
+15:14:58.733 [DEBUG] [org.gradle.cache.internal.btree.BTreePersistentIndexedCache] Closing cache artifact-at-repository.bin (/home/toshibs/.gradle/caches/modules-2/metadata-2.16/artifact-at-repository.bin)
+15:14:58.733 [DEBUG] [org.gradle.cache.internal.btree.BTreePersistentIndexedCache] Closing cache module-metadata.bin (/home/toshibs/.gradle/caches/modules-2/metadata-2.16/module-metadata.bin)
+15:14:58.733 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Releasing lock on artifact cache (/home/toshibs/.gradle/caches/modules-2).
+15:14:58.737 [DEBUG] [org.gradle.cache.internal.btree.BTreePersistentIndexedCache] Closing cache plugin-use-metadata.bin (/home/toshibs/.gradle/caches/2.10/plugin-resolution/plugin-use-metadata.bin)
+15:14:58.738 [DEBUG] [org.gradle.cache.internal.DefaultFileLockManager] Releasing lock on Plugin Resolution Cache (/home/toshibs/.gradle/caches/2.10/plugin-resolution).
+15:14:58.741 [DEBUG] [org.gradle.api.internal.tasks.compile.daemon.CompilerDaemonManager] Stopping 0 compiler daemon(s).
+15:14:58.741 [INFO] [org.gradle.api.internal.tasks.compile.daemon.CompilerDaemonManager] Stopped 0 compiler daemon(s).

@@ -1,0 +1,112 @@
+import Uni;
+import static io.println(int) int; 
+import static io.println(int, boolean) int; 
+import static io.println(); 
+
+class Fac extends Uni {
+
+    int count = 7;
+
+    public static void main(String[] a){
+        int[] num;
+
+        num = new int[5];
+        num[2] = 2 + 3;
+        num[3] = 5;
+        
+        while(num[1] < 5 && 2 < num[0]) {
+            num[1] = 1;
+            num[2] = 2;
+        }
+           
+        if (num[1] < 5)
+            num[3] = 1;
+        else if(num[1] < 2))
+            num[4] = num[5] * this.ComputeFac(num);
+        else 
+            num[4] = this.ComputeFac(this.bye(num[2], num[3]));
+
+        num[2] = io.println(1);
+
+    }
+
+    public boolean hello(){
+        boolean h;
+        int j;
+        int[] k;
+        h == true;
+        if(h) {
+            h = false;
+        }
+        else{}
+
+        h = true && false;
+
+        return h;
+    }
+
+    public boolean hello(int x) {
+        boolean y;
+        int x2;
+        x2 = 2;
+
+        if(x < x2){
+            y=false;
+        }
+        else{
+            y = true;
+        }
+     
+        return y;
+    }
+
+    public static int[] bye(int x, int y){
+        int[] hello;
+        hello = new int[5];
+        return hello;
+    }
+
+    public int ComputeFac(int[] num){
+        int[] num_aux;
+        int[] num_aux2;
+        int[] mun2;
+        int[] mun;
+        int i;
+        boolean x;
+        Fac a;
+
+        num[2] = 2 + 3;
+        num[3] = 5;
+        num_aux2 = new int[5];
+        num_aux = new int[5];
+        mun = new int[5];
+        a = new Fac();
+        
+        while(num[1] < 5 && 2 < num[0]) {
+            num_aux[1] = 1;
+            num_aux[2] = 2;
+        }
+
+        num_aux2[1] = num[2];
+        a = new Fac();
+           
+        if (num[1] < 5)
+            num_aux[3] = 1;
+        else if(num[1] < 2)
+            num_aux[4] = num_aux[5] * this.ComputeFac(num_aux2);
+        else 
+            num_aux[4] = this.ComputeFac(num_aux2);
+
+        x = a.hello();
+
+        num_aux[2] = io.println(1);
+        
+        i = 5;
+
+        mun = new int[5];
+        a.hello();
+
+        return num_aux[1];
+    }
+
+}

@@ -1,0 +1,273 @@
+options
+{
+    LOOKAHEAD=1;
+    MULTI=true;
+}
+
+PARSER_BEGIN(SyntaxAnalysis)
+import java.io.FileNotFoundException;
+
+public class SyntaxAnalysis
+{
+    int count = 0;
+    boolean error = false;
+
+    public int getCount() {
+        return count;
+    }
+    
+    void error_skipto(int kind, ParseException e) throws ParseException{
+        Token t2;
+        count++;
+        System.out.println("Syntax error on statement.\n\n" + e.toString());        
+        
+        if(count == 10) {
+            System.out.println("Reached maximum number of errors (10). Terminating.");
+            throw e;
+        }
+        do {
+          t2 = getNextToken();
+          if(t2.kind == SyntaxAnalysisConstants.EOF)
+              throw e;
+        } while (t2.kind != kind);
+    }
+}
+
+PARSER_END(SyntaxAnalysis)
+
+SKIP : {
+    " " |
+    "\t" |
+    "\r" |
+    "\n" |
+    <"/*" (~["*"])* "*" ("*" | ~["*","/"] (~["*"])* "*")* "/"> |
+    <"//" (~["\n","\r"])* ("\n" | "\r" | "\r\n")> 
+}
+
+TOKEN : {
+    < OPENBRACKET : "{" > |
+    < CLOSEBRACKET : "}" > |
+    < OPENPARENTESIS : "(" > |
+    < CLOSEPARENTESIS : ")" > |
+    < IMPORT : "import" > |
+    < CLASS : "class" > |
+    < EXTENDS : "extends" > |
+    < PUBLIC : "public"  > |
+    < PRIVATE : "private" > |
+    < STATIC : "static" > |
+    < RETURN : "return" > |
+    < NEW : "new" > |
+    < TRUE : "true" > |
+    < FALSE : "false" > |
+    < THIS : "this" > |
+    < INT : "int" > |
+    < INTEGERLITERAL : "0" | (["1" - "9"])(["0" - "9"])*> |
+    < VOID : "void" > |
+    < BOOLEAN : "boolean" > |
+    < STRING : "String" > |
+    < MAIN : "main" > |
+    < NOT: "!" > |
+    < IF : "if" > |
+    < ELSE: "else" > |
+    < WHILE : "while" > |
+    < LENGTH : "length" > |
+    < IDENTIFIER: ("_"|"$"|["a"-"z"]|["A"-"Z"])("_"|"$"|["a"-"z"]|["A"-"Z"]|["0"-"9"])* >  
+
+}
+
+SimpleNode Program(): {}
+{
+    (ImportDeclaration())*
+    ClassDeclaration() <EOF>
+    {return jjtThis;}
+}
+
+void ImportFunctionCall() #FunctionArguments : {}
+{
+    [(Type() | <VOID> #VOID())(","(Type() | <VOID> #VOID()))*]
+}
+
+void ImportDeclaration() : {Token t;}
+{
+    <IMPORT> [t=<STATIC> {jjtThis.line = t.beginLine; jjtThis.column = t.beginColumn; } #STATIC()]  t=<IDENTIFIER> { jjtThis.var = t.image.toString(); jjtThis.line = t.beginLine;jjtThis.column = t.beginColumn; } #Identifier() ("."  t=<IDENTIFIER> { jjtThis.var = t.image.toString(); jjtThis.line = t.beginLine;jjtThis.column = t.beginColumn;} #Identifier() [<OPENPARENTESIS> ImportFunctionCall() #FunctionCall(2) <CLOSEPARENTESIS>] )* [Type() | <VOID> #VOID()] ";"
+}
+
+void ClassDeclaration() #Class : {Token t;}
+{
+    <CLASS> t=<IDENTIFIER> { jjtThis.var = t.image.toString(); jjtThis.line = t.beginLine;jjtThis.column = t.beginColumn;} #ClassName() [<EXTENDS> #Extends()  t=<IDENTIFIER> { jjtThis.var = t.image.toString();jjtThis.line = t.beginLine;jjtThis.column = t.beginColumn;} #Identifier()] "{"
+    (VarDeclaration())*
+    (MethodDeclaration())*
+    "}"
+}
+
+void VarDeclaration(): {Token t;}
+{
+    Type() t=<IDENTIFIER> { jjtThis.var = t.image.toString(); jjtThis.line = t.beginLine;jjtThis.column = t.beginColumn;} #VarName() ";"
+}
+
+void Argument() #Argument : {Token t;} 
+{
+    Type() t=<IDENTIFIER> { jjtThis.var = t.image.toString(); jjtThis.line = t.beginLine;jjtThis.column = t.beginColumn;} #ArgName()
+}
+
+void Arguments() /*#Arguments*/ : {Token t;} 
+{
+   Argument() ("," Argument())* 
+}
+
+void ReturnExpression() #Return : { Token t;}
+{
+    Expression()
+}
+
+void MethodDeclaration() #Method : {Token t;}
+{
+    <PUBLIC>  #PUBLIC() 
+    (Type()  t=<IDENTIFIER> { jjtThis.var = t.image.toString(); jjtThis.line = t.beginLine;jjtThis.column = t.beginColumn;} #MethodName()<OPENPARENTESIS> [ /*Arguments()*/ Argument() ("," Argument())* ]  <CLOSEPARENTESIS> "{" (LOOKAHEAD(2) VarDeclaration())* (Statement())* <RETURN> ReturnExpression() ";" "}" 
+    |
+    <STATIC> <VOID> <MAIN> #Static_Void_Main <OPENPARENTESIS> <STRING> "[" "]" t=<IDENTIFIER> { jjtThis.var = t.image.toString(); jjtThis.line = t.beginLine;jjtThis.column = t.beginColumn;} #ArgName() <CLOSEPARENTESIS> "{" (LOOKAHEAD(2) VarDeclaration())* (Statement())* "}"
+    )
+}
+
+void Type() #void : {Token t;}
+{
+   t = <INT> {jjtThis.line = t.beginLine; jjtThis.column = t.beginColumn; } #Int() [ t = "[" "]" {jjtThis.line = t.beginLine; jjtThis.column = t.beginColumn; } #Array() ] | t = <BOOLEAN> {jjtThis.line = t.beginLine; jjtThis.column = t.beginColumn; } #Boolean() |  t=<IDENTIFIER> { jjtThis.var = t.image.toString(); jjtThis.line = t.beginLine;jjtThis.column = t.beginColumn;} #VariableType() 
+}
+
+void ParseErrorStatement (String t) #void : {}
+{
+    { jjtThis.var = t; }  #ErrorOccured() [Statement()] "}"  
+}
+
+void WhileCondition() #Condition : {}
+{
+    Expression()
+}
+
+void WhileStatement() : {Token t;} 
+{
+    try {
+        <OPENPARENTESIS>  WhileCondition() <CLOSEPARENTESIS>
+    }
+    catch (ParseException e) {
+        error_skipto(SyntaxAnalysisConstants.OPENBRACKET, e);
+        ParseErrorStatement(e.toString());
+        error = true;
+    }
+
+    finally {
+        if(!error) {
+            Statement();
+        }
+    }
+}
+
+void IfBody() : {} 
+{
+    Statement()
+}
+
+void IfStatement() : {Token t;}
+{
+    <OPENPARENTESIS> Expression() #Condition(1) <CLOSEPARENTESIS> IfBody()
+}
+
+void ElseStatement() : {Token t;} 
+{
+    Statement()
+}
+
+void AssignedExpression() #AssignExp : {} 
+{
+    Expression()
+}
+
+void ArrayIndex() #Index : {} 
+{
+    Expression()
+}
+
+void Statement () #void : {Token t;}
+{
+        "{" (Statement())* "}" | 
+        <IF> IfStatement() <ELSE> ElseStatement() |
+        <WHILE> WhileStatement() |
+        LOOKAHEAD(2) t=<IDENTIFIER> { jjtThis.var = t.image.toString(); jjtThis.line = t.beginLine;jjtThis.column = t.beginColumn; } #Variable() (
+           t = "="   AssignedExpression() {jjtThis.line = t.beginLine; jjtThis.column = t.beginColumn; }  #Assigned(2) ";" |
+            "[" ArrayIndex()  #ArrayAccess(2) "]" "=" AssignedExpression()  #Assigned(2) ";"
+        ) |
+        Expression() ";" 
+}
+
+void Expression() #void : {Token t;}
+{
+    Exp1() 
+        ( t = "&&"  Exp1() {jjtThis.line = t.beginLine; jjtThis.column = t.beginColumn; } #And(2) ) *
+
+}
+
+void Exp1() #void : {Token t;} 
+{
+    Exp2() 
+        ( t = "<" Exp2() {jjtThis.line = t.beginLine; jjtThis.column = t.beginColumn; } #LessThan(2) ) *
+
+}
+
+void Exp2() #void : {Token t;}
+{
+    Exp3() 
+        (  t = "+" Exp3() {jjtThis.line = t.beginLine; jjtThis.column = t.beginColumn; }  #Add(2)  | t = "-" Exp3() {jjtThis.line = t.beginLine; jjtThis.column = t.beginColumn; } #Subtract(2) )*
+   
+}
+
+void Exp3() #void : {Token t;}
+{
+    Exp4() 
+       ( t= "*" Exp4() {jjtThis.line = t.beginLine; jjtThis.column = t.beginColumn; } #Multiply(2)  | t = "/" Exp4() {jjtThis.line = t.beginLine; jjtThis.column = t.beginColumn; } #Divide(2) ) *
+}
+
+void FunctionCall() #FunctionArguments : {Token t;}
+{
+    <OPENPARENTESIS> [ Expression() ("," Expression())* ] <CLOSEPARENTESIS>
+}
+
+void ExpressionAlt() #void : {Token t;} 
+{
+    "["  ArrayIndex()  #ArrayAccess(2) "]" |
+    "." (
+        t = <LENGTH> {jjtThis.line = t.beginLine; jjtThis.column = t.beginColumn; }  #Length(1) |
+        t=<IDENTIFIER> { jjtThis.var = t.image.toString(); jjtThis.line = t.beginLine;jjtThis.column = t.beginColumn;} #Identifier() FunctionCall()  #FunctionCall(2)
+        ) |
+    {}
+}
+
+void NewInstanceArgs() #NewInstance : {Token t;}
+{
+    (
+        t=<IDENTIFIER> { jjtThis.var = t.image.toString(); jjtThis.line = t.beginLine;jjtThis.column = t.beginColumn;} #Identifier() <OPENPARENTESIS> <CLOSEPARENTESIS> |
+        t = <INT> "[" Expression() "]" {jjtThis.line = t.beginLine; jjtThis.column = t.beginColumn; }  #IntArray
+    )
+}
+
+void Exp() #Value : {Token t;}
+{
+    t=<IDENTIFIER> { jjtThis.var = t.image.toString(); jjtThis.line = t.beginLine;jjtThis.column = t.beginColumn;} #Identifier() ExpressionAlt() 
+}
+
+void ExpressionFinals() #void : {Token t;} 
+{
+    t = <INTEGERLITERAL> { jjtThis.val = Integer.parseInt(t.image); jjtThis.line = t.beginLine;jjtThis.column = t.beginColumn; } #Integer() ExpressionAlt() |
+    t = <TRUE>  {jjtThis.line = t.beginLine; jjtThis.column = t.beginColumn; } #True() ExpressionAlt() |
+    t = <FALSE> {jjtThis.line = t.beginLine; jjtThis.column = t.beginColumn; } #False()  ExpressionAlt() |
+    Exp() |
+    t = <THIS> ExpressionAlt() {jjtThis.line = t.beginLine; jjtThis.column = t.beginColumn; } #This(1)  |
+    <NEW> NewInstanceArgs() ExpressionAlt() |
+    <OPENPARENTESIS> Expression() <CLOSEPARENTESIS> ExpressionAlt() 
+}
+
+void Exp4() #void : {Token t;}
+{
+    ExpressionFinals() |
+    t = <NOT>  ExpressionFinals() {jjtThis.line = t.beginLine; jjtThis.column = t.beginColumn; } #Not(1)
+}
+

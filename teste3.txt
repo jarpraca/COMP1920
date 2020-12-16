@@ -1,0 +1,22 @@
+import static io.println(int) void;
+
+class Fibonacci {
+
+    public static void main(String[] a){
+        int f0;
+        int f1;
+        int f;
+        f0 = 0;
+        f1 = 1;
+        f = 0;
+        io.println(f0);
+        io.println(f1);
+
+        while(f < 100) {
+            f = f0 + f1;
+            io.println(f);
+            f0 = f1;
+            f1 = f;
+        }
+    }
+}

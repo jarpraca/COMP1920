@@ -1,0 +1,37 @@
+import static io.println(int) void;
+
+class Functions {
+
+	public int abs(int local_0) {
+        int ret;
+
+		if (local_0 < 0) {
+			ret = 0-1 * local_0;
+		} else {
+			ret = local_0;
+		}
+
+        return ret;
+	}
+
+	public int fact(int local_0) {
+		int local_1;
+        local_1 = 1;
+		while(0 < local_0) {
+			local_1 = local_1 * local_0;
+			local_0 = local_0 - 1;
+		}
+		return local_1;
+	}
+
+    public static void main(String[] a) {
+        int final;
+		Functions f;
+		f = new Functions();
+
+        final = f.fact(10) + f.abs(30);
+
+        io.println(final);
+	}
+
+}
